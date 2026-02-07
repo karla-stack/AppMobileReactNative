@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, ScrollView, Linking, TouchableOpacity} from 'react-native';
 
 export default function ExperienciaScreen() {
-  const videoUrl = 'https://youtu.be/gSooK4SSNkM';
+  const videoUrl = 'https://www.youtube.com/watch?v=gSooK4SSNkM';
 
   const abrirVideo = () => {
     Linking.openURL(videoUrl).catch(err => {
@@ -21,7 +21,7 @@ export default function ExperienciaScreen() {
         </Text>
 
         <TouchableOpacity style={styles.botonVideo} onPress={abrirVideo}>
-          <Text style={styles.textoBoton}>️ Ver Video en YouTube</Text>
+          <Text style={styles.textoBoton}> Ver Video en YouTube</Text>
         </TouchableOpacity>
 
         <View style={styles.resumenContainer}>
@@ -41,11 +41,6 @@ export default function ExperienciaScreen() {
           </Text>
           <Text style={styles.puntoTexto}>
             • Mejoré mis habilidades en desarrollo móvil
-          </Text>
-        </View>
-
-        <View style={styles.notaContainer}>
-          <Text style={styles.notaTexto}>
           </Text>
         </View>
       </View>
@@ -107,17 +102,5 @@ const styles = StyleSheet.create({
     color: '#333',
     marginBottom: 8,
     lineHeight: 22,
-  },
-  notaContainer: {
-    backgroundColor: '#FFF3E0',
-    padding: 15,
-    borderRadius: 8,
-    borderLeftWidth: 4,
-    borderLeftColor: '#FF9800',
-  },
-  notaTexto: {
-    fontSize: 14,
-    color: '#E65100',
-    fontStyle: 'italic',
   },
 });
